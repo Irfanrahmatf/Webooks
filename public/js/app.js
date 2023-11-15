@@ -54,38 +54,37 @@ close.addEventListener('click', () => {
 	sidebar.remove('block');
 });
 
-window.addEventListener('load', () => {
-    const statusJaringan = document.getElementById('statusjaringan');
-    statusJaringan.innerHTML = '';
+// window.addEventListener('load', () => {
+//     const statusJaringan = document.getElementById('statusjaringan');
+//     statusJaringan.innerHTML = '';
 
-    const statusOnLineOffLine = () => {
-        statusJaringan.classList.remove('offLine');
-        statusJaringan.classList.remove('onLine');
+//     const statusOnLineOffLine = () => {
+//         statusJaringan.classList.remove('offLine');
+//         statusJaringan.classList.remove('onLine');
 
-        const kondisi = navigator.onLine;
-        if (!kondisi) {
-            statusJaringan.innerHTML = 'Kamu sedang offline, cek koneksi internet kamu ya';
-            statusJaringan.classList.add('offLine');
-            statusJaringan.style.display = 'block';
-            document.querySelector('.user').style.visibility = 'hidden';
-        } else {
-            statusJaringan.innerHTML = 'Kamu sudah online';
-            statusJaringan.classList.add('onLine');
-            document.querySelector('.user').style.visibility = 'visible';
-        }
-        setTimeout(() => {
-            statusJaringan.style.display = 'none';
-            console.log('setTimeout');
-        }, 2000); //set timeout untuk display
-    }
+//         const kondisi = navigator.onLine;
+//         if (!kondisi) {
+//             statusJaringan.innerHTML = 'Kamu sedang offline, cek koneksi internet kamu ya';
+//             statusJaringan.classList.add('offLine');
+//             statusJaringan.style.display = 'block';
+//             document.querySelector('.user').style.visibility = 'hidden';
+//         } else {
+//             statusJaringan.innerHTML = 'Kamu sudah online';
+//             statusJaringan.classList.add('onLine');
+//             document.querySelector('.user').style.visibility = 'visible';
+//         }
+//         setTimeout(() => {
+//             statusJaringan.style.display = 'none';
+//             console.log('setTimeout');
+//         }, 3000); //set timeout untuk display
+//     }
 
-    window.addEventListener('online', statusOnLineOffLine);
-    window.addEventListener('offline', statusOnLineOffLine);
+//     window.addEventListener('online', statusOnLineOffLine);
+//     window.addEventListener('offline', statusOnLineOffLine);
 
-    statusOnLineOffLine();
-
-    // Mengecek status jaringan secara berkala setiap 5 detik
-    setInterval(statusOnLineOffLine, 5000);
-});
+//     statusOnLineOffLine();
+// });
 
 
+// // Mengecek status jaringan secara berkala setiap 5 detik
+    // setInterval(statusOnLineOffLine, 5000);

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="brand">
             <a href="{{ route('home') }}">
-                <img src="{{ image(site('logo'), 'setting') }}" alt="{{ site('name') }}">
+                {{ site('name') }}
             </a>
             <i class="icon ion-md-menu drawer"></i>
         </div>
@@ -31,9 +31,17 @@
                     </li>
                 @endauth
                 @guest
-                    <li><a href="{{ route('login') }}">Login</a></li>
-                    <li><a href="{{ route('register') }}">Register</a></li>
-                @endguest
+            <li>
+                <a href="{{ route('login') }}" class="bg-black text-white px-3 py-2 rounded">
+                    Login
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('register') }}" class="bg-black text-white px-3 py-2 rounded">
+                    Register
+                </a>
+            </li>
+        @endguest
             </ul>
         </div>
     </div>

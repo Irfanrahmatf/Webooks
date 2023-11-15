@@ -515,7 +515,7 @@ body {
 
 body.login{
   --tw-bg-opacity: 1;
-  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  background-color: rgba(243, 245, 246, var(--tw-bg-opacity));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1071,22 +1071,36 @@ nav .menu .list li:hover, nav .menu .list li.active {
   color: rgba(31, 41, 55, var(--tw-text-opacity));
 }
 
-nav .menu .user{
-  display: flex;
-  align-items: center;
+nav .menu .user {
+    display: flex;
+    align-items: center;
 }
 
-nav .menu .user li{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+nav .menu .user li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
-nav .menu .user img{
-  border-radius: 9999px;
-  height: 2rem;
-  object-fit: cover;
-  width: 2rem;
+nav .menu .user img {
+    border-radius: 9999px;
+    height: 2rem;
+    object-fit: cover;
+    width: 2rem;
 }
+
+/* Tambahkan gaya untuk tombol Login dan Register */
+nav .menu .user a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+nav .menu .user a:hover {
+    background-color: black;
+    color: white;
+}
+
 
 aside {
   --tw-bg-opacity: 1;
