@@ -47,7 +47,7 @@ composer install
 yarn
 ```
 ### 4. Configure .env
-Pada file .env.example rename menjadi .env kemudian jalankan perintah: 
+In the .env.example file rename it to .env then run the command: 
 ```sh
 php artisan key:generate
 ```
