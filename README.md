@@ -58,7 +58,7 @@ Jalankan perintah berikut:
 php artisan storage:link
 ```
 ### 7. Create Database and Migrations
-- Create database (sql) nama : pengaduan_masyarakat
+- Create database (sql) nama : laravel
 - Kemudian migrate model table :
 ```sh
 php artisan migrate --seed
