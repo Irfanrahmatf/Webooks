@@ -8,7 +8,7 @@
 </p>
 
 
-## INSTALLATION APP
+## INSTALLATION 
 <p>This project using laravel version 10 and php 8</p>
 
 ### 1. Install PHP, Composer, and Yarn
@@ -52,19 +52,19 @@ Pada file .env.example rename menjadi .env kemudian jalankan perintah:
 php artisan key:generate
 ```
 ### 5. Create Symbolic Link for Storage
-Membuat symbolic link antara direktori public/storage dan storage/app/public. Ini diperlukan agar file-file yang disimpan di storage/app/public dapat diakses secara langsung melalui web.
-Jalankan perintah berikut:
+Create symbolic links between public/storage directories and storage/app/public. This is required for files stored on storage/app/public to be accessed directly through the web.
+Run the following command:
 ```sh
 php artisan storage:link
 ```
 ### 7. Create Database and Migrations
 - Create database (sql) nama : laravel
-- Kemudian migrate model table :
+- Then migrate the model table :
 ```sh
 php artisan migrate --seed
 ```
 
-- Jika ada error sanctum, jalankan:
+- If there is an error sanctum, run:
 ```sh
 composer require laravel/sanctum
 ```
