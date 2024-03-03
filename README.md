@@ -64,10 +64,6 @@ php artisan storage:link
 php artisan migrate --seed
 ```
 
-- If there is an error sanctum, run:
-```sh
-composer require laravel/sanctum
-```
 ### 8. Running App
 defaut host port running dev http://localhost:8000
 ```sh
